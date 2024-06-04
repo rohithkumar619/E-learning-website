@@ -1,0 +1,41 @@
+.questions {
+  display: flex;
+  margin-top: 50px;
+}
+.ques {
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  gap: 20px;
+}
+.q1 {
+  width: 500px;
+  height: 30px;
+  background-color: rgb(237, 237, 237);
+  padding-left: 20px;
+  margin: 0;
+}
+
+.ans {
+  margin: 0;
+  width: 490px;
+  padding-left: 10px;
+}
+@media (max-width: 600px) {
+  .questions {
+    margin-left: -50px;
+  }
+  .q1 {
+    width: 340px;
+    height: 30px;
+    background-color: rgb(237, 237, 237);
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .ans {
+    margin: 0;
+    width: 300px;
+    padding-left: 10px;
+  }
+}

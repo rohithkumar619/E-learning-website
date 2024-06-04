@@ -1,0 +1,92 @@
+.instructor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 50px;
+}
+.instructor > :nth-child(1) {
+  font-size: 30px;
+  margin: 0;
+  color: green;
+}
+.top-i {
+  display: flex;
+  gap: 30px;
+}
+.top-i-1 img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.top-i-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.top-i-2 > :nth-child(1) {
+  width: 200px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.top-i-2 > :nth-child(1) span {
+  color: green;
+}
+.top-i-2 > :nth-child(2) {
+  width: 500px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.bottom-i {
+  display: flex;
+  gap: 20px;
+}
+.bottom-i-2 img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.bottom-i-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.bottom-i-1 > :nth-child(1) {
+  width: 200px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.bottom-i-1 > :nth-child(1) span {
+  color: green;
+}
+.bottom-i-1 > :nth-child(2) {
+  width: 500px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .instructor {
+    margin-top: 30px;
+  }
+  .top-i {
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .top-i-2 > :nth-child(2) {
+    width: 300px;
+  }
+  .bottom-i {
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  .bottom-i-1 > :nth-child(2) {
+    width: 300px;
+  }
+  .instructor > :nth-child(1) {
+    margin-left: -190px;
+    border-bottom: 2px solid black;
+  }
+}

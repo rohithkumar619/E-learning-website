@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 50px;
+  width: 100vw;
+  z-index: 1;
+  border-bottom: 1.5px solid green;
+}
+ul {
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+  gap: 70px;
+}
+.Logo {
+  margin-left: 10px;
+  color: green;
+}
+ul li {
+  font-weight: bold;
+}
+.signup {
+  background-color: transparent;
+  border: 1.5px solid black;
+  color: black;
+  font-weight: bold;
+  margin-right: 50px;
+}
+.bars {
+  visibility: hidden;
+}
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 175px;
+    margin-left: 95px;
+    margin-right: -400px;
+    transition: 1s;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .signup {
+    visibility: hidden;
+  }
+  .bars {
+    visibility: visible;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+  }
+  .menuu {
+    margin-right: 400px;
+  }
+}
+.color {
+  background-color: white;
+  transition: 0.5s;
+}

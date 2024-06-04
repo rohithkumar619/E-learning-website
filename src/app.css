@@ -1,0 +1,10 @@
+body {
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+}
+.App {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}

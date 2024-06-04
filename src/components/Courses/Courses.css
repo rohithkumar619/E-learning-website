@@ -1,0 +1,52 @@
+.courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+.left-c {
+  display: flex;
+  border: 2px solid green;
+  padding: 10px;
+}
+.left-c img {
+  width: 450px;
+}
+.right-c {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.right-c > :nth-child(1) {
+  font-size: 20px;
+  width: 180px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.right-c > :nth-child(1) span {
+  color: green;
+}
+.right-c > :nth-child(2) {
+  font-size: 16px;
+  width: 350px;
+  margin-bottom: 10px;
+}
+.right-c > :nth-child(3) {
+  background-color: transparent;
+  border: 1.5px solid black;
+  color: black;
+}
+@media (max-width: 600px) {
+  .courses {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .left-c img {
+    width: 200px;
+  }
+  .right-c {
+    margin-left: 10px;
+  }
+}

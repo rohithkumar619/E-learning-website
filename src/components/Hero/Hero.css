@@ -1,0 +1,186 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 100px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+  position: relative;
+}
+.left-h {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  gap: 10px;
+}
+.left-h > :nth-child(1) {
+  color: green;
+  margin: 0;
+}
+.left-h > :nth-child(2) {
+  font-size: 40px;
+  width: 300px;
+  margin: 0;
+}
+.left-h > :nth-child(3) {
+  font-size: 20px;
+  width: 350px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.buttons > :nth-child(1) {
+  background-color: green;
+}
+.buttons > :nth-child(2) {
+  background-color: transparent;
+  color: black;
+  border: 1.5px solid black;
+  font-weight: 700;
+}
+.right-h {
+  display: flex;
+}
+.right-h > :nth-child(1) {
+  width: 700px;
+}
+.happy {
+  position: absolute;
+  top: 70px;
+  left: 45%;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 10px;
+  width: 150px;
+  height: 90px;
+  padding: 5px;
+}
+.happy > :nth-child(1) {
+  margin: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.happy > :nth-child(2) {
+  margin: 5px;
+  font-size: 11px;
+  color: green;
+  font-weight: bold;
+}
+.whatsapp {
+  position: absolute;
+  right: 200px;
+  top: 100px;
+}
+.graph {
+  position: absolute;
+  right: 500px;
+  top: 400px;
+  width: 60px;
+  height: 60px;
+}
+.hero2 {
+  display: flex;
+  gap: 50px;
+}
+.hero2 img {
+  width: 130px;
+  height: 70px;
+  object-fit: contain;
+}
+.hero-container > :nth-child(2) {
+  font-size: 20px;
+  font-weight: bold;
+}
+.hero-container > :nth-child(2) span {
+  font-size: 18px;
+  color: green;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .hero-container {
+    margin-left: -50px;
+    width: 100vw;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .left-h {
+    gap: 10px;
+  }
+  .left-h > :nth-child(2) {
+    font-size: 22px;
+    width: 270px;
+    z-index: 0;
+  }
+  .left-h > :nth-child(3) {
+    font-size: 17px;
+    width: 200px;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .buttons > :nth-child(1) {
+    width: 100px;
+    font-size: 13px;
+  }
+  .buttons > :nth-child(2) {
+    width: 100px;
+    font-size: 13px;
+  }
+  .right-h {
+    display: grid;
+  }
+  .right-h > :nth-child(1) {
+    width: 450px;
+    margin-left: 170px;
+  }
+  .happy {
+    top: 250px;
+    left: 20%;
+    width: 120px;
+    height: 70px;
+  }
+  .happy > :nth-child(1) {
+    margin: 0px;
+    font-size: 11px;
+  }
+  .happy > :nth-child(2) {
+    margin: 0px;
+    font-size: 10px;
+  }
+  .whatsapp {
+    right: 0px;
+    top: 310px;
+    width: 25px;
+    height: 25px;
+  }
+  .graph {
+    left: 160px;
+    top: 490px;
+    width: 30px;
+    height: 30px;
+  }
+  .hero2 {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    gap: 20px;
+    margin-left: 30px;
+  }
+  .hero2 img {
+    width: 80px;
+    height: 30px;
+  }
+  .hero-container > :nth-child(2) {
+    font-size: 15px;
+    width: 250px;
+  }
+  .hero-container > :nth-child(2) span {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+  }
+}
