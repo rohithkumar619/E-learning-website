@@ -1,5 +1,2 @@
 # E-learning-website
-Steps to run this website:-
-1)clone this repository using ( git clone --link-- )
-2)Open Folder in vs code and type "yarn"
-3)"yarn start" to open live server.
+steps to run this website:- 1)clone this repo using "git clone this resp link" 2)open this repo in vs code and in terminal type "npm install" 3)To run live "npm run dev"
